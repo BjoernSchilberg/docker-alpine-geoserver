@@ -21,13 +21,13 @@ docker build -t geoserver .
 ## Start container
 
 ```shell
-docker run -d -p 8181:8080 geoserver 
+docker run -d -p 8181:8080 geoserver
 ```
 
 while the command is
 
 ```shell
-docker run -d -p [exposed port]:[internal port] geoserver 
+docker run -d -p [exposed port]:[internal port] geoserver
 ```
 
 ## Access container via http
