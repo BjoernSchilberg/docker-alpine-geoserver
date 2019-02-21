@@ -25,6 +25,10 @@ RUN sed -i '\:</web-app>:i\
 <filter>\n\
     <filter-name>cross-origin</filter-name>\n\
     <filter-class>org.eclipse.jetty.servlets.CrossOriginFilter</filter-class>\n\
+     <init-param>\n\
+       <param-name>allowedHeaders</param-name>\n\
+       <param-value>origin, content-type, accept, authorization</param-value>\n\
+   </init-param>\n\
 </filter>\n\
 <filter-mapping>\n\
     <filter-name>cross-origin</filter-name>\n\
