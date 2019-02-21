@@ -70,3 +70,11 @@ mode to `interactive` mode.
 ```shell
 docker run -it -v geoserver /bin/ash
 ```
+
+## Set X-Frame-Options Policy
+
+https://docs.geoserver.org/latest/en/user/production/config.html#x-frame-options-policy
+
+```sh
+docker run -p 8181:8080 -e JAVA_OPTS='-Dgeoserver.xframe.shouldSetPolicy=false' geoserver
+```
