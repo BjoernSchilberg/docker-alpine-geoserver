@@ -18,4 +18,5 @@ RUN cd && wget https://netcologne.dl.sourceforge.net/project/geoserver/GeoServer
 
 #Expose GeoServer's default port
 EXPOSE 8080
-CMD /opt/geoserver-$GEOSERVER_VERSION/bin/startup.sh
+
+CMD $GEOSERVER_HOME/bin/startup.sh
