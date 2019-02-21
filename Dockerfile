@@ -13,6 +13,9 @@ USER geoserver
 #Get GeoServer
 RUN cd && wget https://netcologne.dl.sourceforge.net/project/geoserver/GeoServer/$GEOSERVER_VERSION/geoserver-$GEOSERVER_VERSION-bin.zip && \
     unzip geoserver-$GEOSERVER_VERSION-bin.zip -d /opt && rm geoserver-$GEOSERVER_VERSION-bin.zip
+#Add css plugin
+RUN cd && wget https://netcologne.dl.sourceforge.net/project/geoserver/GeoServer/$GEOSERVER_VERSION/extensions/geoserver-$GEOSERVER_VERSION-css-plugin.zip && \
+        unzip geoserver-$GEOSERVER_VERSION-css-plugin.zip -d ${GEOSERVER_HOME}/webapps/geoserver/WEB-INF/lib && rm geoserver-$GEOSERVER_VERSION-css-plugin.zip
 # For Spring-Boot project, use the entrypoint below to reduce Tomcat startup time.
 #ENTRYPOINT exec java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar docker_java.jar
 
