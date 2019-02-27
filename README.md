@@ -1,3 +1,9 @@
+# Alpine Docker container for Mapserver
+
+A minimal GeoServer Docker image based on [Alpine
+Linux](https://alpinelinux.org/about/) with a complete package index and only
+212 MB in size (compressed)!
+
 - [Alpine Docker container for Mapserver](#alpine-docker-container-for-mapserver)
   - [What is Alpine Linux?](#what-is-alpine-linux)
   - [Build image](#build-image)
@@ -11,12 +17,6 @@
   - [Examples for setting java options](#examples-for-setting-java-options)
     - [Support time-series layers](#support-time-series-layers)
     - [Set X-Frame-Options Policy](#set-x-frame-options-policy)
-
-# Alpine Docker container for Mapserver
-
-A minimal GeoServer Docker image based on [Alpine
-Linux](https://alpinelinux.org/about/) with a complete package index and only
-212 MB in size (compressed)!
 
 ## What is Alpine Linux?
 
